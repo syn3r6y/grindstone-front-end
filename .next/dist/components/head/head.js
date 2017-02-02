@@ -1,0 +1,41 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require("/Users/kyleerickson/Documents/Development/aeonic/aeonic-react/node_modules/react/react.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _head = require("/Users/kyleerickson/Documents/Development/aeonic/aeonic-react/node_modules/next/dist/lib/head.js");
+
+var _head2 = _interopRequireDefault(_head);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (_ref) {
+  var title = _ref.title,
+      metaDesc = _ref.metaDesc;
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(
+      _head2.default,
+      null,
+      _react2.default.createElement(
+        "title",
+        null,
+        title
+      ),
+      _react2.default.createElement("meta", { name: "viewport", content: "initial-scale=1.0, width=device-width" }),
+      _react2.default.createElement("meta", { name: "description", content: metaDesc }),
+      _react2.default.createElement(
+        "style",
+        null,
+        "\n        /*  Fonts  */\n        @font-face{\n          font-family: \"OpenSans\";\n          src: url('../static/fonts/OpenSans-Light.ttf');\n          font-weight: 200;\n        }\n        @font-face{\n          font-family: \"OpenSans\";\n          src: url('../static/fonts/OpenSans-Regular.ttf');\n          font-weight: 400;\n        }\n        @font-face{\n          font-family: \"OpenSans\";\n          src: url('../static/fonts/OpenSans-SemiBold.ttf');\n          font-weight: 600;\n        }\n        @font-face{\n          font-family: \"OpenSans\";\n          src: url('../static/fonts/OpenSans-Bold.ttf');\n          font-weight: 700;\n        }\n        @font-face{\n          font-family: \"OpenSans\";\n          src: url('../static/fonts/OpenSans-ExtraBold.ttf');\n          font-weight: 800;\n        }\n        @font-face{\n          font-family: \"OpenSans\";\n          src: url('../static/fonts/OpenSans-LightItalic.ttf');\n          font-weight: 200;\n          font-style:italic;\n        }\n        @font-face{\n          font-family: \"OpenSans\";\n          src: url('../static/fonts/OpenSans-RegularItalic.ttf');\n          font-weight: 400;\n          font-style:italic;\n        }\n        @font-face{\n          font-family: \"OpenSans\";\n          src: url('../static/fonts/OpenSans-SemiBoldItalic.ttf');\n          font-weight: 600;\n          font-style:italic;\n        }\n        @font-face{\n          font-family: \"OpenSans\";\n          src: url('../static/fonts/OpenSans-BoldItalic.ttf');\n          font-weight: 700;\n          font-style:italic;\n        }\n        @font-face{\n          font-family: \"OpenSans\";\n          src: url('../static/fonts/OpenSans-ExtraBoldItalic.ttf');\n          font-weight: 800;\n          font-style:italic;\n        }\n\n        @font-face{\n          font-family: \"Bariol\";\n          src: url('../static/fonts/bariol_regular-webfont.ttf');\n          font-weight: 400;\n        }\n        @font-face{\n          font-family: \"Bariol\";\n          src: url('../static/fonts/bariol_regular_italic-webfont.ttf');\n          font-weight: 400;\n          font-style: italic;\n        }\n\n        html {\n          font-family: \"OpenSans\", Arial, sans-serif;\n          font-weight: 200;\n          font-size: 16px;\n        }\n\n        h1, h2, h3, h4, h5, h6{\n          font-family: \"Bariol\", Arial, sans-serif;\n          font-weight: 400;\n        }\n        * { box-sizing: border-box; margin: 0; padding: 0 }\n      "
+      )
+    )
+  );
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvaGVhZC9oZWFkLmpzIl0sIm5hbWVzIjpbInRpdGxlIiwibWV0YURlc2MiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFBQTs7Ozs7O2tCQUVlO0FBQUEsTUFBRUEsS0FBRixRQUFFQSxLQUFGO0FBQUEsTUFBU0MsUUFBVCxRQUFTQSxRQUFUO0FBQUEsU0FDYjtBQUFBO0FBQUE7QUFDRTtBQUFBO0FBQUE7QUFDRTtBQUFBO0FBQUE7QUFBUUQ7QUFBUixPQURGO0FBRUUsOENBQU0sTUFBSyxVQUFYLEVBQXNCLFNBQVEsdUNBQTlCLEdBRkY7QUFHRSw4Q0FBTSxNQUFLLGFBQVgsRUFBeUIsU0FBU0MsUUFBbEMsR0FIRjtBQUlFO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFKRjtBQURGLEdBRGE7QUFBQSxDIiwiZmlsZSI6ImhlYWQuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2t5bGVlcmlja3Nvbi9Eb2N1bWVudHMvRGV2ZWxvcG1lbnQvYWVvbmljL2Flb25pYy1yZWFjdCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCc7XG5cbmV4cG9ydCBkZWZhdWx0ICh7dGl0bGUsIG1ldGFEZXNjfSkgPT4gKFxuICA8ZGl2PlxuICAgIDxIZWFkPlxuICAgICAgPHRpdGxlPnt0aXRsZX08L3RpdGxlPlxuICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cImluaXRpYWwtc2NhbGU9MS4wLCB3aWR0aD1kZXZpY2Utd2lkdGhcIiAvPlxuICAgICAgPG1ldGEgbmFtZT1cImRlc2NyaXB0aW9uXCIgY29udGVudD17bWV0YURlc2N9IC8+XG4gICAgICA8c3R5bGU+e2BcbiAgICAgICAgLyogIEZvbnRzICAqL1xuICAgICAgICBAZm9udC1mYWNle1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIk9wZW5TYW5zXCI7XG4gICAgICAgICAgc3JjOiB1cmwoJy4uL3N0YXRpYy9mb250cy9PcGVuU2Fucy1MaWdodC50dGYnKTtcbiAgICAgICAgICBmb250LXdlaWdodDogMjAwO1xuICAgICAgICB9XG4gICAgICAgIEBmb250LWZhY2V7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiT3BlblNhbnNcIjtcbiAgICAgICAgICBzcmM6IHVybCgnLi4vc3RhdGljL2ZvbnRzL09wZW5TYW5zLVJlZ3VsYXIudHRmJyk7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICAgICAgfVxuICAgICAgICBAZm9udC1mYWNle1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIk9wZW5TYW5zXCI7XG4gICAgICAgICAgc3JjOiB1cmwoJy4uL3N0YXRpYy9mb250cy9PcGVuU2Fucy1TZW1pQm9sZC50dGYnKTtcbiAgICAgICAgICBmb250LXdlaWdodDogNjAwO1xuICAgICAgICB9XG4gICAgICAgIEBmb250LWZhY2V7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiT3BlblNhbnNcIjtcbiAgICAgICAgICBzcmM6IHVybCgnLi4vc3RhdGljL2ZvbnRzL09wZW5TYW5zLUJvbGQudHRmJyk7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICAgICAgfVxuICAgICAgICBAZm9udC1mYWNle1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIk9wZW5TYW5zXCI7XG4gICAgICAgICAgc3JjOiB1cmwoJy4uL3N0YXRpYy9mb250cy9PcGVuU2Fucy1FeHRyYUJvbGQudHRmJyk7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IDgwMDtcbiAgICAgICAgfVxuICAgICAgICBAZm9udC1mYWNle1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIk9wZW5TYW5zXCI7XG4gICAgICAgICAgc3JjOiB1cmwoJy4uL3N0YXRpYy9mb250cy9PcGVuU2Fucy1MaWdodEl0YWxpYy50dGYnKTtcbiAgICAgICAgICBmb250LXdlaWdodDogMjAwO1xuICAgICAgICAgIGZvbnQtc3R5bGU6aXRhbGljO1xuICAgICAgICB9XG4gICAgICAgIEBmb250LWZhY2V7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiT3BlblNhbnNcIjtcbiAgICAgICAgICBzcmM6IHVybCgnLi4vc3RhdGljL2ZvbnRzL09wZW5TYW5zLVJlZ3VsYXJJdGFsaWMudHRmJyk7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICAgICAgICBmb250LXN0eWxlOml0YWxpYztcbiAgICAgICAgfVxuICAgICAgICBAZm9udC1mYWNle1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIk9wZW5TYW5zXCI7XG4gICAgICAgICAgc3JjOiB1cmwoJy4uL3N0YXRpYy9mb250cy9PcGVuU2Fucy1TZW1pQm9sZEl0YWxpYy50dGYnKTtcbiAgICAgICAgICBmb250LXdlaWdodDogNjAwO1xuICAgICAgICAgIGZvbnQtc3R5bGU6aXRhbGljO1xuICAgICAgICB9XG4gICAgICAgIEBmb250LWZhY2V7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiT3BlblNhbnNcIjtcbiAgICAgICAgICBzcmM6IHVybCgnLi4vc3RhdGljL2ZvbnRzL09wZW5TYW5zLUJvbGRJdGFsaWMudHRmJyk7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICAgICAgICBmb250LXN0eWxlOml0YWxpYztcbiAgICAgICAgfVxuICAgICAgICBAZm9udC1mYWNle1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIk9wZW5TYW5zXCI7XG4gICAgICAgICAgc3JjOiB1cmwoJy4uL3N0YXRpYy9mb250cy9PcGVuU2Fucy1FeHRyYUJvbGRJdGFsaWMudHRmJyk7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IDgwMDtcbiAgICAgICAgICBmb250LXN0eWxlOml0YWxpYztcbiAgICAgICAgfVxuXG4gICAgICAgIEBmb250LWZhY2V7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiQmFyaW9sXCI7XG4gICAgICAgICAgc3JjOiB1cmwoJy4uL3N0YXRpYy9mb250cy9iYXJpb2xfcmVndWxhci13ZWJmb250LnR0ZicpO1xuICAgICAgICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgICAgIH1cbiAgICAgICAgQGZvbnQtZmFjZXtcbiAgICAgICAgICBmb250LWZhbWlseTogXCJCYXJpb2xcIjtcbiAgICAgICAgICBzcmM6IHVybCgnLi4vc3RhdGljL2ZvbnRzL2JhcmlvbF9yZWd1bGFyX2l0YWxpYy13ZWJmb250LnR0ZicpO1xuICAgICAgICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgICAgICAgZm9udC1zdHlsZTogaXRhbGljO1xuICAgICAgICB9XG5cbiAgICAgICAgaHRtbCB7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiT3BlblNhbnNcIiwgQXJpYWwsIHNhbnMtc2VyaWY7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IDIwMDtcbiAgICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIH1cblxuICAgICAgICBoMSwgaDIsIGgzLCBoNCwgaDUsIGg2e1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIkJhcmlvbFwiLCBBcmlhbCwgc2Fucy1zZXJpZjtcbiAgICAgICAgICBmb250LXdlaWdodDogNDAwO1xuICAgICAgICB9XG4gICAgICAgICogeyBib3gtc2l6aW5nOiBib3JkZXItYm94OyBtYXJnaW46IDA7IHBhZGRpbmc6IDAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvSGVhZD5cbiAgPC9kaXY+XG4pIl19

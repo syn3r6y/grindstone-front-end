@@ -1,0 +1,8 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var blue = exports.blue = '#4F6DFF';
+var purple = exports.purple = "#7C4AFF";
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvY29sb3JzL2luZGV4LmpzIl0sIm5hbWVzIjpbImJsdWUiLCJwdXJwbGUiXSwibWFwcGluZ3MiOiI7Ozs7O0FBQU8sSUFBTUEsc0JBQU8sU0FBYjtBQUNBLElBQU1DLDBCQUFTLFNBQWYiLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2t5bGVlcmlja3Nvbi9Eb2N1bWVudHMvRGV2ZWxvcG1lbnQvYWVvbmljL2Flb25pYy1yZWFjdCIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCBibHVlID0gJyM0RjZERkYnO1xuZXhwb3J0IGNvbnN0IHB1cnBsZSA9IFwiIzdDNEFGRlwiO1xuIl19
