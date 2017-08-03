@@ -1,7 +1,7 @@
 {
-  "name": "aeonic-react",
+  "name": "grindstone-app",
   "version": "0.0.1",
-  "description": "React.js front end server for Aeonic ",
+  "description": "React.js front end server for Grindstone ",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -10,6 +10,8 @@
   "author": "Kyle Erickson",
   "license": "ISC",
   "dependencies": {
-    "next": "^1.2.3"
+    "next": "3.0.1-beta.20",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   }
 }
