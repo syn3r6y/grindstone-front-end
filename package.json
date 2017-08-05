@@ -1,17 +1,16 @@
 {
-  "name": "grindstone-app",
-  "version": "0.0.1",
-  "description": "React.js front end server for Grindstone ",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Kyle Erickson",
-  "license": "ISC",
+  "name": "grindstone-front-end",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "next": "3.0.1-beta.20",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.10"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
