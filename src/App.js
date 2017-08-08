@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import globalStyles from './global-styles';
 import Navigator from './components/navigation/Navigator';
-import Editor from './components/editor/Editor';
+import Editor from './components/Editor/';
 import PropertyPanel from './components/property-ui/PropertyPanel';
 
 class App extends Component {

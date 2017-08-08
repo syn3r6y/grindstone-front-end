@@ -1,7 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Editor = () => <Wrapper>Here is the Editor</Wrapper>;
+import Picker from '../ColorPicker/';
+
+const Editor = () =>
+  <Wrapper>
+    <Picker />
+  </Wrapper>;
 
 export default Editor;
 

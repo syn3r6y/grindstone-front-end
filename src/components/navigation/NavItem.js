@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 `;
 
 NavItem.propTypes = {
-  icon: PropTypes.func.isRequired
+  icon: PropTypes.object.isRequired
 };
 
 export default NavItem;

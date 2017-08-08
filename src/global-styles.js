@@ -55,6 +55,13 @@ const globalStyles = () => {
         font-weight: 300;
     }
 
+    h5 {
+        font-weight: 400;
+        font-size: 0.75em;
+        letter-spacing: 0.25px;
+        line-height: 1.5em;
+    }
+
     `;
 
   return null;
