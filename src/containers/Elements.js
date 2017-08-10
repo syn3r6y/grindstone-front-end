@@ -1,10 +1,10 @@
 import React, { PureComponent } from 'react';
 // import styled from 'styled-components';
 
-export default class BrandColors extends PureComponent {
+export default class Elements extends PureComponent {
   state = {};
 
   render() {
-    return <div>Brand</div>;
+    return <div>Elements</div>;
   }
 }

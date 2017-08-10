@@ -1,10 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 
-const NavItem = ({ icon }) =>
+const NavItem = ({ icon, link }) =>
   <Wrapper>
-    {icon}
+    <Link to={link}>
+      {icon}
+    </Link>
   </Wrapper>;
 
 const Wrapper = styled.div`
@@ -17,7 +20,8 @@ const Wrapper = styled.div`
 `;
 
 NavItem.propTypes = {
-  icon: PropTypes.object.isRequired
+  icon: PropTypes.object.isRequired,
+  link: PropTypes.string.isRequired
 };
 
 export default NavItem;

@@ -12,9 +12,9 @@ const Navigator = () => {
     <Wrapper>
       <GrindstoneLogo />
       <Nav>
-        <NavItem icon={<IconFill />} />
-        <NavItem icon={<IconText />} />
-        <NavItem icon={<IconGroup />} />
+        <NavItem icon={<IconFill />} link="/brand" />
+        <NavItem icon={<IconText />} link="/typography" />
+        <NavItem icon={<IconGroup />} link="/elements" />
       </Nav>
       <DummyBox />
     </Wrapper>

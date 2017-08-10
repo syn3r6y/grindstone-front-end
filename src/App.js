@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import globalStyles from './global-styles';
 import Navigator from './components/navigation/Navigator';
@@ -11,11 +12,13 @@ class App extends Component {
     globalStyles();
 
     return (
-      <Wrapper>
-        <Navigator />
-        <Editor />
-        <PropertyPanel />
-      </Wrapper>
+      <Router>
+        <Wrapper>
+          <Navigator />
+          <Editor />
+          <PropertyPanel />
+        </Wrapper>
+      </Router>
     );
   }
 }
