@@ -20,4 +20,8 @@ export default Editor;
 const Wrapper = styled.div`
   flex: 1;
   display: flex;
+  background: #fff;
+  position: relative;
+  z-index: 3;
+  border-left: 1px solid #dedede;
 `;
