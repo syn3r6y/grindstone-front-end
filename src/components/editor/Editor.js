@@ -22,6 +22,7 @@ const Wrapper = styled.div`
   display: flex;
   background: #fff;
   position: relative;
-  z-index: 3;
+  z-index: 2;
   border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
 `;

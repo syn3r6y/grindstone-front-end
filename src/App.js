@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import globalStyles from './global-styles';
-import Navigator from './components/navigation/Navigator';
+import Navigator from './components/Navigator';
 import Editor from './components/Editor/';
-import PropertyPanel from './components/property-ui/PropertyPanel';
+import PropertyPanel from './components/PropertyPanel';
 
 class App extends Component {
   render() {

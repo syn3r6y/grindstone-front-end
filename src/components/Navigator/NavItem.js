@@ -17,8 +17,8 @@ const Wrapper = styled.div`
   width: 3em;
   height: 3em;
   position: relative;
-  left: 0.5em;
-  z-index: 2;
+  left: calc(0.5em + 1px);
+  z-index: 3;
 
   > a {
     display: flex;
@@ -34,7 +34,9 @@ const Wrapper = styled.div`
 
   > .-active {
     background: #fff;
-    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+    border-left: 1px solid #dedede;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
 
     > svg {
       fill: ${blue};

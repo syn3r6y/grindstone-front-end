@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   display: flex;
   height: 100%;
   width: 18em;
-  background: #dedede;
+  background: #eee;
 `;
 
 export default PropertyPanel;
