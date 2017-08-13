@@ -9,7 +9,8 @@ import ColorItems from '../components/ColorItems';
 
 class BrandColors extends PureComponent {
   static propTypes = {
-    colors: PropTypes.array
+    colors: PropTypes.array,
+    actions: PropTypes.object
   };
 
   render() {
@@ -18,7 +19,7 @@ class BrandColors extends PureComponent {
     return (
       <Wrapper>
         <h3>Colors</h3>
-        <ColorItems colors={colors} />
+        <ColorItems colors={colors} title="Primary Colors" />
       </Wrapper>
     );
   }
