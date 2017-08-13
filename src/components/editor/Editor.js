@@ -25,4 +25,5 @@ const Wrapper = styled.div`
   z-index: 2;
   border-left: 1px solid #dedede;
   border-right: 1px solid #dedede;
+  padding: 2em;
 `;
