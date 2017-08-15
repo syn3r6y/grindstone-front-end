@@ -39,7 +39,7 @@ const Wrapper = styled.div`
     border-bottom: 1px solid #dedede;
 
     > svg {
-      fill: ${blue};
+      fill: rgb(${blue.r}, ${blue.g}, ${blue.b});
     }
   }
 `;

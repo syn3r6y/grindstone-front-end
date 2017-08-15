@@ -1,9 +1,9 @@
 /** Primary Colors */
-const blue = '#506CFF';
-const lightBlue = '#00C6FF';
-const purple = '#7A4BFF';
-const lightPurple = '#8B869B';
-const black = '#313445';
+const blue = { r: 80, g: 108, b: 255 };
+const lightBlue = { r: 0, g: 198, b: 255 };
+const purple = { r: 122, g: 75, b: 255 };
+const lightPurple = { r: 139, g: 134, b: 155 };
+const black = { r: 49, g: 52, b: 69 };
 
 export default {
   blue,

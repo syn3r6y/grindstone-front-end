@@ -1,15 +1,12 @@
 import * as types from './actionTypes';
 
-export const addCourseSuccess = color => {
+export const addColorSuccess = color => {
   return { type: types.ADD_COLOR_SUCCESS, color };
 };
 
-// export const loadColorsSuccess = () => {
-//   return { type: types.LOAD_COLORS_SUCCESS, colors };
-// };
-
-// export const loadColors = () => {
-//   return (dispatch) => {
-
-//   }
-// }
+export const addColor = color => {
+  //API logic goes here.
+  return (dispatch, getState) => {
+    dispatch(addColorSuccess(color));
+  };
+};

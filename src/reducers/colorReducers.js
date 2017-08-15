@@ -8,9 +8,7 @@ export const addColorReducer = (state = initialState.colors, action) => {
         ...state,
         colors: [...state.colors, action.color]
       };
-      break;
     default:
       return state;
-      break;
   }
 };
