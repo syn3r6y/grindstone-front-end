@@ -8,8 +8,6 @@ import Editor from './components/Editor/';
 import PropertyPanel from './components/PropertyPanel';
 
 class App extends Component {
-  componentWillMount() {}
-
   render() {
     globalStyles();
 

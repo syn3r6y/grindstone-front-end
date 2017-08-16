@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import ColorItem from './ColorItem';
 
-const ColorItems = ({ title, colors }) =>
+const ColorItems = ({ title, colors, addColor }) =>
   <Wrapper>
     <h4>
       {title}
@@ -12,15 +12,10 @@ const ColorItems = ({ title, colors }) =>
     <ColorArray>
       {colors
         ? colors.map(color => {
-            <ColorItem
-              rgba={color.rgba}
-              hex={color.hex}
-              title={color.title}
-              action={color.action}
-            />;
+            <ColorItem rgba={color.rgba} hex={color.hex} title={color.title} />;
           })
         : null}
-      <ColorItem empty={true} />
+      <ColorItem empty={true} action={() => addColor('#FFF')} />
     </ColorArray>
   </Wrapper>;
 
@@ -34,7 +29,8 @@ ColorItems.propTypes = {
       action: PropTypes.func,
       empty: PropTypes.bool
     })
-  )
+  ),
+  addColor: PropTypes.func
 };
 
 export default ColorItems;

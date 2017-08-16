@@ -5,6 +5,7 @@ import { bindActionCreators } from 'redux';
 import { PropTypes } from 'prop-types';
 
 import * as colorActions from '../actions/colorActions';
+import * as propertyActions from '../actions/propertyViewActions';
 import ColorItems from '../components/ColorItems';
 
 class BrandColors extends PureComponent {
@@ -16,7 +17,7 @@ class BrandColors extends PureComponent {
 
   /** Component Render */
   render() {
-    const { colors, actions } = this.props;
+    const { colors, colorActions, propertyActions } = this.props;
 
     return (
       <Wrapper>
@@ -24,7 +25,7 @@ class BrandColors extends PureComponent {
         <ColorItems
           colors={colors}
           title="Primary Colors"
-          addColor={actions.addColor}
+          addColor={colorActions.addColor}
         />
       </Wrapper>
     );
@@ -40,7 +41,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    actions: bindActionCreators(colorActions, dispatch)
+    colorActions: bindActionCreators(colorActions, dispatch),
+    propertyActions: bindActionCreators(propertyActions, dispatch)
   };
 };
 

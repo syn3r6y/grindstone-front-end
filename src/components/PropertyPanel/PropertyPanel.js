@@ -1,18 +1,40 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import { PropTypes } from 'prop-types';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import * as propertyActions from '../../actions/propertyViewActions';
+import ViewColorPicker from '../PropertyViews/ViewColorPicker';
 
-const PropertyPanel = ({ activePanel }) =>
-  <Wrapper>
-    {activePanel}
-  </Wrapper>;
+class PropertyPanel extends PureComponent {
+  static propTypes = {
+    view: PropTypes.string
+  };
 
-/** Properties */
-PropertyPanel.propTypes = {
-  activePanel: PropTypes.element
-};
+  state = {
+    activePanel: ''
+  };
 
-export default PropertyPanel;
+  componentWillMount() {
+    const { view } = this.props;
+    switch (view) {
+      case 'color picker':
+        return this.setState({ activePanel: <ViewColorPicker /> });
+      default:
+        return null;
+    }
+  }
+
+  render() {
+    const { activePanel } = this.state;
+
+    return (
+      <Wrapper>
+        {activePanel}
+      </Wrapper>
+    );
+  }
+}
 
 /** Styles */
 const Wrapper = styled.div`
@@ -21,3 +43,14 @@ const Wrapper = styled.div`
   width: 18em;
   background: #eee;
 `;
+
+/** Redux Hookups */
+const mapStateToProps = (state, ownProps) => {
+  return {
+    view: state.propertyView
+  };
+};
+
+const mapDispatchToProps = {};
+
+export default connect(mapStateToProps, mapDispatchToProps)(PropertyPanel);
