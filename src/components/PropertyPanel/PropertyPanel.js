@@ -11,26 +11,21 @@ class PropertyPanel extends PureComponent {
     view: PropTypes.string
   };
 
-  state = {
-    activePanel: ''
-  };
-
-  componentWillMount() {
-    const { view } = this.props;
-    switch (view) {
-      case 'color picker':
-        return this.setState({ activePanel: <ViewColorPicker /> });
-      default:
-        return null;
-    }
-  }
+  // componentWillMount() {
+  //   const { view } = this.props;
+  //   console.log('view', view);
+  //   switch (view) {
+  //     case 'color-selection':
+  //       return this.setState({ activePanel:  });
+  //     default:
+  //       return null;
+  //   }
+  // }
 
   render() {
-    const { activePanel } = this.state;
-
     return (
       <Wrapper>
-        {activePanel}
+        {this.props.view === 'color-selection' ? <ViewColorPicker /> : null}
       </Wrapper>
     );
   }
@@ -47,10 +42,14 @@ const Wrapper = styled.div`
 /** Redux Hookups */
 const mapStateToProps = (state, ownProps) => {
   return {
-    view: state.propertyView
+    view: state.propertyViews
   };
 };
 
-const mapDispatchToProps = {};
+const mapDispatchToProps = dispatch => {
+  return {
+    propertyActions: bindActionCreators(propertyActions, dispatch)
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(PropertyPanel);

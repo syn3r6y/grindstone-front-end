@@ -15,17 +15,23 @@ class BrandColors extends PureComponent {
     actions: PropTypes.object
   };
 
+  addNewColor = passedColor => {
+    const { colorActions, propertyActions } = this.props;
+
+    colorActions.addColor(passedColor);
+    propertyActions.switchPropertyView('color-selection');
+  };
+
   /** Component Render */
   render() {
-    const { colors, colorActions, propertyActions } = this.props;
-
+    const { colors } = this.props;
     return (
       <Wrapper>
         <h3>Colors</h3>
         <ColorItems
           colors={colors}
           title="Primary Colors"
-          addColor={colorActions.addColor}
+          addColor={this.addNewColor}
         />
       </Wrapper>
     );

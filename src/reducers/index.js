@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
-import { addColorReducer } from './colorReducers';
+import colors from './colorReducers';
+import propertyViews from './propertyViewReducer';
 
-const rootReducer = combineReducers({ addColorReducer });
+const rootReducer = combineReducers({ colors, propertyViews });
 
 export default rootReducer;
