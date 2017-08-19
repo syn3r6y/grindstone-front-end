@@ -9,3 +9,9 @@ export const rgb2hex = rgb => {
       ('0' + parseInt(rgb[3], 10).toString(16)).slice(-2)
     : '';
 };
+
+export const rgbaObjectToString = rgbaObj => {
+  return `rgba(${rgbaObj.r}, ${rgbaObj.g}, ${rgbaObj.b}, ${rgbaObj.a
+    ? rgbaObj.a
+    : 1})`;
+};

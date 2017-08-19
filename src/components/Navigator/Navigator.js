@@ -6,15 +6,21 @@ import IconFill from '../svg/IconFill';
 import IconText from '../svg/IconText';
 import IconGroup from '../svg/IconGroup';
 import NavItem from './NavItem';
+import colors from '^/constants/colors';
+import { rgbaObjectToString } from '^/utils';
+
+let { blue, purple } = colors;
+blue = rgbaObjectToString(blue);
+purple = rgbaObjectToString(purple);
 
 const Navigator = () => {
   return (
     <Wrapper>
-      <GrindstoneLogo />
+      <GrindstoneLogo color="#FFF" />
       <Nav>
-        <NavItem icon={<IconFill />} link="/brand" />
-        <NavItem icon={<IconText />} link="/typography" />
-        <NavItem icon={<IconGroup />} link="/elements" />
+        <NavItem icon={<IconFill color="#FFF" />} link="/brand" />
+        <NavItem icon={<IconText color="#FFF" />} link="/typography" />
+        <NavItem icon={<IconGroup color="#FFF" />} link="/elements" />
       </Nav>
       <DummyBox />
     </Wrapper>
@@ -26,7 +32,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   height: 100%;
   width: 4em;
-  background: #eee;
+  background: linear-gradient(135deg, ${blue}, ${purple});
   align-items: center;
   justify-content: space-between;
 
