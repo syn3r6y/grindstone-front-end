@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { PropTypes } from 'prop-types';
 
-import * as colorActions from '../actions/colorActions';
-import * as propertyActions from '../actions/propertyViewActions';
+import * as colorActions from '../redux_actions/colorActions';
+import * as propertyActions from '../redux_actions/propertyViewActions';
 import ColorItems from '../components/ColorItems';
 
 class BrandColors extends PureComponent {

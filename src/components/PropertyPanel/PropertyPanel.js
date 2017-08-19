@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { PropTypes } from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as propertyActions from '../../actions/propertyViewActions';
+import * as propertyActions from '../../redux_actions/propertyViewActions';
 import ViewColorPicker from '../PropertyViews/ViewColorPicker';
 
 class PropertyPanel extends PureComponent {
