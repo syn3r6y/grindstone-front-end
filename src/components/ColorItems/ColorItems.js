@@ -15,7 +15,10 @@ const ColorItems = ({ title, colors, addColor }) =>
             <ColorItem rgba={color.rgba} hex={color.hex} title={color.title} />;
           })
         : null}
-      <ColorItem empty={true} action={() => addColor('#FFF')} />
+      <ColorItem
+        empty={true}
+        action={() => addColor({ r: 255, g: 255, b: 255, a: 0 })}
+      />
     </ColorArray>
   </Wrapper>;
 

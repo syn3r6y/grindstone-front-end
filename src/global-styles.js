@@ -89,6 +89,7 @@ const globalStyles = () => {
         line-height: 1.3125em;
         margin-top: 1.3125em;
         margin-bottom: 0em;
+        font-weight: 300;
     }
     p, ul, ol, pre, table, blockquote {
         margin-top: 0em;

@@ -136,11 +136,15 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 0;
-  background: #ddd;
   padding: 1em;
   width: 18em;
   height: 13em;
   align-items: flex-start;
+  border-bottom: 1px solid #dedede;
+  h5 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
 `;
 
 const ControlWrapper = styled.div`
@@ -160,9 +164,11 @@ const InputWrapper = styled.div`
 `;
 
 const Color = styled.div`
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
+  border-radius: 1.5em;
   margin-right: 1em;
+  border: 1px solid #dedede;
 `;
 
 const Adjustable = styled.div`
@@ -176,33 +182,45 @@ const SatWrapper = styled.div`
   position: relative;
   height: 100%;
   width: 8em;
+  border-radius: 0.5em;
+  overflow: hidden;
 `;
 
 const SliderWrapper = styled.div`
   position: relative;
   width: 1em;
+  border-radius: 0.5em;
+  border: 1px solid #dedede;
   height: 100%;
   margin-left: 1em;
+  z-index: 10;
+
+  .hue-vertical {
+    border-radius: 1.5em;
+  }
+  > div > div {
+    border-radius: 0.5em;
+  }
 `;
 
 const Pointer = styled.div`
   background: #fff;
-  border-radius: 0.125em;
+  border-radius: 0.75em;
   z-index: 10;
-  transform: translate(0, -0.5em);
-  width: 1em;
-  height: 1em;
-  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  transform: translate(-3px, -0.75em);
+  width: 1.25em;
+  height: 1.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
 `;
 
 const AlphaPointer = styled.div`
   background: #fff;
-  border-radius: 0.125em;
+  border-radius: 0.75em;
   z-index: 10;
-  transform: translate(-3px, -0.5em);
-  width: 1em;
-  height: 1em;
-  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  transform: translate(-6px, -0.75em);
+  width: 1.25em;
+  height: 1.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
 `;
 
 export default CustomPicker(Colors);

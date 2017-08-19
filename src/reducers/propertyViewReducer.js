@@ -7,7 +7,7 @@ export default function propertyViewReducer(
 ) {
   switch (action.type) {
     case types.SWITCH_PROPERTY_VIEW_SUCCESS:
-      return action.view;
+      return { activeWindow: action.view };
     default:
       return state;
   }

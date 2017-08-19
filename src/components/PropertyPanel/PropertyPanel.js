@@ -42,7 +42,7 @@ const Wrapper = styled.div`
 /** Redux Hookups */
 const mapStateToProps = (state, ownProps) => {
   return {
-    view: state.propertyViews
+    view: state.propertyView.activeWindow
   };
 };
 

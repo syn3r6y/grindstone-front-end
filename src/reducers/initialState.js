@@ -1,4 +1,9 @@
 export default {
-  colors: [],
-  propertyView: ''
+  colors: {
+    directory: [],
+    activeColor: ''
+  },
+  propertyView: {
+    activeWindow: ''
+  }
 };

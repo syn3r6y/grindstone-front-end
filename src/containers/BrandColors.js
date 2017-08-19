@@ -19,6 +19,7 @@ class BrandColors extends PureComponent {
     const { colorActions, propertyActions } = this.props;
 
     colorActions.addColor(passedColor);
+    //colorActions.switchActiveColor(passedColor);
     propertyActions.switchPropertyView('color-selection');
   };
 
@@ -41,7 +42,7 @@ class BrandColors extends PureComponent {
 /** Redux Hookups */
 const mapStateToProps = (state, ownProps) => {
   return {
-    colors: state.colors
+    colors: state.colors.directory
   };
 };
 
