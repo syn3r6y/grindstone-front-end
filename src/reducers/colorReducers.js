@@ -6,7 +6,8 @@ export default function addColorReducer(state = initialState.colors, action) {
     case types.ADD_COLOR_SUCCESS:
       return {
         ...state.directory,
-        directory: [...state.directory, action.color]
+        directory: [...state.directory, action.color],
+        activeColor: action.color
       };
     case types.SWITCH_ACTIVE_COLOR_SUCCESS:
       return { ...state.activeColor, activeColor: action.color };

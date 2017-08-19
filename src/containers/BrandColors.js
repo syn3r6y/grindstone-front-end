@@ -17,9 +17,7 @@ class BrandColors extends PureComponent {
 
   addNewColor = passedColor => {
     const { colorActions, propertyActions } = this.props;
-
     colorActions.addColor(passedColor);
-    //colorActions.switchActiveColor(passedColor);
     propertyActions.switchPropertyView('color-selection');
   };
 
